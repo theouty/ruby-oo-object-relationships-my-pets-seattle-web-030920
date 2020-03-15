@@ -6,9 +6,7 @@ attr_reader :name, :species
   @species = human 
   end
   
-  
-    
-    
+
   def cats 
     Cats.all.select{|cat| cat.owner == self}
   end
