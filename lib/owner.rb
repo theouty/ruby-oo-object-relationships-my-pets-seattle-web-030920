@@ -17,11 +17,6 @@ class Owner
       count= count + 1
   end
   
-  def 
-  
-  
-    
-    
   def cats 
     Cats.all.select{|cat| cat.owner == self}
   end
@@ -29,7 +24,5 @@ class Owner
   def dogs 
     Dogs.all.select{|dog| dog.owner == self}
   end
-  
-  def buy_cat 
     
 end
