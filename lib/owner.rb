@@ -11,11 +11,11 @@ class Owner
     @@all 
   end
   
-  def self.count
-    count =0
-    @@all.each do |owner| 
-      count= count + 1
-  end
+  #def self.count
+    #count =0
+   # @@all.each do |owner| 
+  #    count= count + 1
+  #end
   
   def cats 
     Cats.all.select{|cat| cat.owner == self}
