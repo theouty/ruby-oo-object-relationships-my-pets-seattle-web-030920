@@ -1,12 +1,27 @@
 class Owner
-attr_reader :name, :species
-
-@@all = []
+  attr_reader :name, :species
+  @@all = []
+  
   def initialize()
-  @species = human 
+  @species = "human" 
+  @@all << self
   end
   
-
+  def self.all
+    @@all 
+  end
+  
+  def self.count
+    count =0
+    @@all.each do |owner| 
+      count= count + 1
+  end
+  
+  def 
+  
+  
+    
+    
   def cats 
     Cats.all.select{|cat| cat.owner == self}
   end
