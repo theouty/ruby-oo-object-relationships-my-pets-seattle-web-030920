@@ -1,6 +1,6 @@
 class Cat
   attr_accessor :owner
-  #attr_reader :name, :mood
+  attr_reader :name, :mood
   
   @@all =[]
   
