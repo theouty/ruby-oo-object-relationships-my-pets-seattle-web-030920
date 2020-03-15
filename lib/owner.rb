@@ -1,5 +1,5 @@
 class Owner
-  
+  attr_accessor :mood
   attr_reader :name, :species
   @@all = []
   
